@@ -7,8 +7,8 @@ print("You will give me a list of names, and i will pick a person to pay")
 Names_List = input("if you're ready, enter the names seperated by a comma: ")
 #split the list
 names = Names_List.split(", ")
-#calculate the length of list
-length_of_list = len(names)
+#calculate the length of list , i subtracte by 1 because the list start by 0
+length_of_list = len(names) - 1
 #generate random number between 0 to length_of_list
 final_name =random.randint(0,length_of_list)
 #print who pay
